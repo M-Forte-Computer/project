@@ -3,9 +3,7 @@
   --foreground: #171717;
   --primary-color: #0070f3;
   --secondary-color: #f5f5f5;
-  --border-color: #eaeaea;
   --font-size-base: 16px;
-  --font-size-large: 20px;
   --font-size-small: 14px;
 }
 
@@ -78,6 +76,20 @@ button:hover {
   background-color: #005bb5;
 }
 
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: var(--foreground); /* Change link color to match the foreground color */
+  text-decoration: none;
+  margin: 0 8px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -99,6 +111,20 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+input[type="text"] {
+  padding: 8px;
+  font-size: var(--font-size-base);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  margin-right: 8px;
+  width: 200px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
 }
 
 @media (prefers-color-scheme: dark) {

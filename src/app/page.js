@@ -1,12 +1,15 @@
+'use client';
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import MainContent from "./components/MainContent";
 
 export default function HomePage() {
   return (
     <div>
       <Header />
-      <MainContent />
+      <main>
+        <h1>Welcome to the Task Management App</h1>
+        <p>Organize, assign, and track tasks efficiently.</p>
+      </main>
       <Footer />
     </div>
   );
